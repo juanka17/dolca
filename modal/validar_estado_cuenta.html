@@ -1,0 +1,35 @@
+<!-- Modal -->
+<div id="modalViewValidar" class="modal">
+
+    <form ng-submit="insert_negacion_estado_cuenta(formUser)">
+        <div class="modal-body">
+            <div class="cell small-12 medium-12">
+
+                <h3>Negacion </h3>
+
+                <hr>
+
+                <div>
+                    <label for="id_negacion_archivo">Id factura </label>
+                    <input type="text" class="form-control" id="id_negacion_archivo" name="id_negacion_archivo" ng-model="formUser.id_negacion_archivo = dataModal.id" disabled required>
+                </div>
+
+                <div class="form-group">
+                    <label for="id_negacion_factura_tipo">tipos de negacion</label>
+                    <select class="form-control" id="id_negacion_factura_tipo" name="id_negacion_factura_tipo" ng-model="formUser.id_negacion_factura_tipo" required>
+                                <option value="1">Factura o remisión ilegible</option>
+                                <option value="2">No hay productos Bienestar</option>
+
+                            </select>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" data-toggle="modal">    guardar   </button>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+    </form>
+
+</div>

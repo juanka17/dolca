@@ -1,0 +1,401 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6
+{
+    color: #11a8e1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#logo-vidrios
+{
+    height: 161px;
+}
+
+#body_index
+{
+
+    background: url(../images/fondo_login.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#main_container
+{
+    margin-bottom: 100px;
+}
+
+#login-box
+{
+    background: rgba(255,255,255,0.4);
+    border: 2px solid #fbfbfb;
+    border-radius: 20px;
+    width: 25%;
+    height: 100%;
+    margin-top: 257px;
+    margin-left: 350px;
+}
+
+#menu_container
+{
+    background: white;
+    margin: 0px auto 21px;
+    padding-right: 20px;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid;
+    border-bottom-color: #fdc300;
+}
+
+#menu_container span
+{
+    color: black;
+    font-size: 2.2em;
+    margin: 0px;
+}
+.foto{
+    display: inline-block;
+    border: 3px solid #000066;
+    width: auto;
+}
+
+#img_logo
+{
+
+}
+
+@media screen and (max-width: 39.9375em) 
+{
+    #img_logo
+    {
+        padding-left: 0px;
+        height: 120px;
+    }
+
+    #puntoss
+    {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: bolder;
+        color: #0071ab;
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 0px;
+
+        animation-name: breathPoints;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-direction: alternate;
+    }
+}
+
+#datos_usuario
+{
+    background: url('../images/backgrounds/curva_azul.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    margin: 17px -14px;
+    padding: 25px;
+    font-size: 25px;
+    color: white;
+}
+
+#principal
+{
+    margin-top: 0px;
+}
+#contenedor_puntos
+{
+
+}
+#puntos
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bolder;
+    color: black;
+    font-size: 60px;
+    font-weight: bolder;
+    margin: 0px;
+
+    animation-name: breathPoints;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+@keyframes breathPoints
+{
+    0% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+#menu_vidrios
+{
+    margin-bottom: 20px;
+}
+.top-bar, .top-bar ul {
+    background-color: #000000;
+    border-radius: 40px;
+}
+
+#main > ul > li a {
+    color: white;
+}
+#main > ul > li a:hover {
+    color: #ffcd00;
+}
+
+#logo_index
+{
+    width: 30%;
+}
+
+#clarita
+{
+    width: 45%;
+}
+
+#logo_footer_bien_estar
+{
+    width: 50%;
+}
+#logo_footer_vidrio_andino
+{
+    width: 57%;
+}
+#botones
+{
+    margin-top: 101px;
+}
+
+@media screen and (max-width: 39.9375em) 
+{
+    #logo_index
+    {
+        width:50%;
+        margin-top: 0px;
+    }
+    #botones {
+        margin-top: 24px;
+    }
+    #logo_footer
+    {
+        width: 50%;
+    }
+
+    #titulo 
+    {
+        margin-top: 10px;
+    }
+}
+
+#header_usuario a
+{
+    color: #fefefe;
+}
+
+#footer
+{
+    bottom: 0px;
+    position: relative;
+    width: 100%;
+}
+
+#footer a{
+    color: #57a2c7;
+}
+
+#footer img
+{
+    display: inline-block;
+    height: 68px
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+.banner-calculo
+{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.banner-calculo img
+{
+    width: 100%;
+}
+
+.banner-calculo .texto
+{
+    font-size: 25px;
+    left: 0px;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) 
+{
+    #menu_acceso .expanded
+    {
+        height: auto;
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) 
+{
+    #body_index
+    {
+
+        background: url('../images/backgrounds/font7.jpg') no-repeat center center fixed;
+    }
+
+    #main_container
+    {
+        margin-bottom: 250px;
+    }
+
+    #principal {
+        margin-top: 11px;
+    }
+
+    #fixed_logo
+    {
+        left: 2%;
+    }
+
+    #fixed_logo img
+    {
+        width: 70%;
+    }
+
+    #login-box
+    {
+        background: rgba(255,255,255,0.6);
+        border: 2px solid #b1b1b1;
+        border-radius: 20px;
+        margin-top: 8%;
+        width: 72%;
+        height: 100%;
+    }
+
+    #menu_container
+    {
+        margin-top: 10px;
+    }
+
+    #menu_acceso .expanded
+    {
+        height: auto;
+    }
+
+    #menu_acceso .expanded i
+    {
+        font-size: 10px;
+        margin: 10% auto;
+    }
+
+    .banner-calculo img
+    {
+        display: none;
+    }
+
+    .banner-calculo .texto
+    {
+        font-size: 10px;
+        padding: 5px;
+        position: relative;
+    }
+
+    #datos_usuario
+    {
+        margin: 10px 0px;
+        font-size: 15px;
+    }
+
+    #clarita
+    {
+        width: 90%;
+    }
+    #logo_footer_bien_estar
+    {
+        width: 50%;
+        margin-right: 70px;
+    }
+    #logo_footer_vidrio_andino
+    {
+        width: 65%;
+        margin-left: 40px;
+
+    }
+}
